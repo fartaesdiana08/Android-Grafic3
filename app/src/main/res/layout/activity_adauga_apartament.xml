@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdaugaApartamentActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/adresa"
+        android:id="@+id/adresa"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nume proprietar"
+        android:id="@+id/numeProp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/chirie"
+        android:inputType="number"
+        android:id="@+id/chirie"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renovat"
+        android:id="@+id/renovat"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etaj"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbEt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etaj_1" />
+
+        <RadioButton
+            android:id="@+id/rbEt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etaj_2" />
+
+        <RadioButton
+            android:id="@+id/rbEt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etaj_3" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salveaza"
+        android:id="@+id/btnSalveaza"/>
+
+</LinearLayout>
